@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+body,
+section,
+header,
+h1,
+h2,
+h3,
+div,
+p,
+ul,
+li,
+a,
+main {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  font-family: "Epilogue", sans-serif;
+}
+li,
+ul {
+  list-style: none;
+}
+body {
+  background: #fafafa;
+}
+
+/*Header*/
+
+.header {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+  height: 40px;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  align-items: center;
+  color: #7e7e7e;
+}
+.listas {
+  display: flex;
+  gap: 64px;
+}
+.lista-menu {
+  display: flex;
+  gap: 40px;
+}
+.lista-menu li:hover {
+  cursor: pointer;
+  color: #000000;
+}
+
+.lista-login {
+  display: flex;
+  gap: 32px;
+}
+
+.lista-login li:hover {
+  cursor: pointer;
+  color: #000000;
+}
+.lista-login a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 16px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+}
+.lista-login a:hover {
+  border-color: gray;
+}
+/*Main*/
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 200px;
+  margin: 0 170px;
+}
+.main .main-titulo {
+  font-size: 4.5rem;
+}
+.main .main-introducao {
+  margin-top: 190px;
+}
+.main .main-descricao {
+  margin-top: 48px;
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 500;
+  width: 45ch;
+  color: #7e7e7e;
+}
+
+.main .main-btn {
+  background: none;
+  padding: 16px 32px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  margin-top: 32px;
+}
+.main .main-btn:hover {
+  cursor: pointer;
+  border-color: gray;
+}
+.main .main-marcas {
+  margin-top: 80px;
+}
+.main .main-marcas .lista-marcas {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.img-hero img {
+  width: 478px;
+  height: 647px;
+}
+.dropdown {
+  position: absolute;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  top: 70px;
+  color: #7e7e7e;
+}
+
+.dropdown ul li {
+  margin-top: 16px;
+}
+
+.dropdown ul li:hover {
+  color: #000000;
+}
+.dropdown ul li:first-child {
+  margin-top: 0;
+}
+
+.dropdown-feat {
+  position: absolute;
+  background: #ffffff;
+  padding: 18px 28px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  font-size: 0.8rem;
+  top: 70px;
+  left: 145px;
+  color: #7e7e7e;
+}
+.dropdown-feat ul li {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-feat ul li:hover {
+  color: #000000;
+}
+.dropdown-feat ul li:first-child {
+  margin-top: 0;
+}
+.dropdown-feat img {
+  margin-right: 12px;
+  width: 16px;
+  height: 16px;
+}
+.hide {
+  display: none;
+}
