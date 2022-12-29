@@ -1,37 +1,44 @@
 const company = document.getElementById("company");
-
-company.addEventListener("mouseover", removeClasse);
+const features = document.getElementById("features");
+const img = document.getElementById("arrow-down");
+const img2 = document.getElementById("arrow-down-2");
 
 company.addEventListener("mouseout", adicionaClasse);
-
-function removeClasse() {
-  const dropdown = document.getElementById("dropdown-company");
-  dropdown.classList.remove("hide");
-}
 
 function adicionaClasse() {
   const dropdown = document.getElementById("dropdown-company");
 
   if (!dropdown.classList.contains("hide")) {
     dropdown.classList.add("hide");
+    img2.src = "/images/icon-arrow-down.svg";
   }
 }
 
-const features = document.getElementById("features");
+company.addEventListener("mouseover", removeClasse);
 
-features.addEventListener("mouseover", removeClasseFeat);
+function removeClasse() {
+  const dropdown = document.getElementById("dropdown-company");
+  dropdown.classList.remove("hide");
+  img2.src = "/images/icon-arrow-up.svg";
+}
 
 features.addEventListener("mouseout", adicionaClasseFeat);
-
-function removeClasseFeat() {
-  const dropdown = document.getElementById("dropdown-features");
-  dropdown.classList.remove("hide");
-}
 
 function adicionaClasseFeat() {
   const dropdown = document.getElementById("dropdown-features");
 
   if (!dropdown.classList.contains("hide")) {
     dropdown.classList.add("hide");
+
+    img.src = "/images/icon-arrow-down.svg";
   }
+}
+
+features.addEventListener("mouseover", removeClasseFeat);
+
+function removeClasseFeat() {
+  const dropdown = document.getElementById("dropdown-features");
+  dropdown.classList.remove("hide");
+
+  img.src = "/images/icon-arrow-up.svg";
 }
