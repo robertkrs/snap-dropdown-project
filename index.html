@@ -92,7 +92,17 @@
         </div>
       </div>
       <div class="img-hero">
-        <img src="/images/image-hero-desktop.png" alt="hero" />
+        <picture>
+          <source
+            media="(min-width:601px)"
+            srcset="/images/image-hero-desktop.png"
+          />
+          <source
+            media="(max-width:600px)"
+            srcset="/images/image-hero-mobile.png"
+          />
+          <img src="/images/image-hero-desktop.png" alt="hero" />
+        </picture>
       </div>
     </main>
 

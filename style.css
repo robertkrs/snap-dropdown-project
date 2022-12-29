@@ -93,17 +93,20 @@ body {
 }
 
 .main .main-btn {
-  background: none;
+  background: #000000;
   padding: 16px 32px;
   font-size: 1.1rem;
   font-weight: 700;
-  border: 2px solid #000000;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 32px;
+  color: #ffffff;
+  border: 1px solid transparent;
 }
 .main .main-btn:hover {
   cursor: pointer;
-  border-color: gray;
+  background: none;
+  color: #000000;
+  border-color: #000000;
 }
 .main .main-marcas {
   margin-top: 80px;
